@@ -19,9 +19,13 @@
         <input type="text" name="nb1" id="nb1"/>
         <label for="nb2">2e nombre</label>
         <input type="text" name="nb2" id="nb2"/>
-        <button type="submit">Calculer</button>
+        <input type="submit" value="Calculer" name="submit" id="submit"/>
     </form>
-    <h3>Résultat :</h3>
-    <p><?= $result ?></p>
+    <?php
+        if (isset($result))
+        { ?>
+            <h3>Résultat :</h3>
+            <p><?= $result ?></p>
+    <?php } ?>
 </body>
 </html>
