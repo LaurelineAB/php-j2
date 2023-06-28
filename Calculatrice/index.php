@@ -40,6 +40,11 @@
             $result = modulo($nb1, $nb2);
             echo "<h3>Résultat : $result</h3>";;
         }
+        if ($op === "puis")
+        {
+            $result = puissance($nb1, $nb2);
+            echo "<h3>Résultat : $result</h3>";;
+        }
         
     }
     
